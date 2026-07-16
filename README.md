@@ -64,3 +64,14 @@ BOB/
 - manifest.json追加
 - bob.geo.json追加
 - bob.entity.json作成開始
+# BOB
+
+Minecraft Bedrock AI Addon
+
+## 現在
+- 黄色いキューブ制作中
+
+## 目標
+- 日本語AI
+- 音声
+- 持ち運べる

@@ -56,3 +56,11 @@ BOB/
 - [ ] 拾う機能
 - [ ] AI会話
 - [ ] 音声
+## 更新履歴
+
+### 2026-07-16
+- プロジェクト作成
+- BP/RP追加
+- manifest.json追加
+- bob.geo.json追加
+- bob.entity.json作成開始

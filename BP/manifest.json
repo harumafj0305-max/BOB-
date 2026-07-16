@@ -1,0 +1,28 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "BOB Behavior Pack",
+    "description": "Behavior Pack for BOB AI",
+    "uuid": "d3d8c8d3-2f2d-4c5e-9b54-8f1cb2d8b3d1",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "uuid": "6b7b0f5e-5d54-46c7-a4d3-4dd8d1f4a8f0",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "c1a4e5e6-4d1d-4d55-a5d9-83b68f9b8b5a",
+      "version": [1, 0, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.17.0"
+    }
+  ]
+}

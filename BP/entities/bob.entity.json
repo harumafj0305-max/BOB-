@@ -1,0 +1,53 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "bob:bob",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "bob"
+        ]
+      },
+
+      "minecraft:health": {
+        "value": 999999,
+        "max": 999999
+      },
+
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+
+      "minecraft:nameable": {},
+
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+
+      "minecraft:look_at_player": {
+        "priority": 1,
+        "look_distance": 64
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "BOB Resource Pack",
+    "description": "Resource Pack for BOB AI",
+    "uuid": "c1a4e5e6-4d1d-4d55-a5d9-83b68f9b8b5a",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "8c2bfb3d-f93f-4b49-97f5-1f45f2b78c9e",
+      "version": [1, 0, 0]
+    }
+  ]
+}

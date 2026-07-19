@@ -88,3 +88,101 @@ Minecraft Bedrock AI Addon
  - クリエイティブのときに、何かアイテム(どれでもよい)をくれと言われた場合、クリエだからいいだろ。のようなことを言われる
  - ネットで流行ってる言葉とか使ったりする。
  - 流行ってる言葉以外にも、話の内容に合わせてなんかの言葉入れたりする
+
+github版のファイル構造はこれ
+BOB/
+├── behavior_packs/
+│   └── BOB_BP/
+│       ├── manifest.json              # BP情報
+│       │
+│       ├── entities/
+│       │   └── bob.entity.json        # BOB本体設定
+│       │
+│       ├── scripts/
+│       │   ├── main.js                # メイン処理
+│       │   ├── ai.js                  # AI・会話
+│       │   ├── chat.js                # チャット処理
+│       │   ├── emotion.js             # 気分ゲージ
+│       │   ├── inventory.js           # アイテム処理
+│       │   ├── events.js              # イベント処理
+│       │   ├── voice.js               # 音声(予定)
+│       │   └── utils.js               # 共通関数
+│       │
+│       └── functions/
+│           └── (必要になったら追加)
+│
+├── resource_packs/
+│   └── BOB_RP/
+│       ├── manifest.json              # RP情報
+│       │
+│       ├── entity/
+│       │   └── bob.entity.json        # クライアント設定
+│       │
+│       ├── models/
+│       │   └── entity/
+│       │       └── bob.geo.json       # モデル
+│       │
+│       ├── textures/
+│       │   └── entity/
+│       │       └── bob.png            # テクスチャ
+│       │
+│       ├── animations/
+│       │
+│       └── animation_controllers/
+│
+└── README.md
+ほんで、ファイルアプリのファイル構造はこれ、
+Download/
+└── BOB/
+    ├── behavior_packs/
+    │   └── BOB_BP/
+    │       ├── manifest.json
+    │       ├── entities/
+    │       │   └── bob.entity.json
+    │       ├── scripts/
+    │       │   ├── main.js
+    │       │   ├── ai.js
+    │       │   ├── chat.js
+    │       │   ├── emotion.js
+    │       │   ├── inventory.js
+    │       │   ├── events.js
+    │       │   ├── voice.js
+    │       │   └── utils.js
+    │       └── functions/
+    │
+    └── resource_packs/
+        └── BOB_RP/
+            ├── manifest.json
+            ├── entity/
+            │   └── bob.entity.json
+            ├── models/
+            │   └── entity/
+            │       └── bob.geo.json
+            ├── textures/
+            │   └── entity/
+            │       └── bob.png
+            ├── animations/
+            └── animation_controllers/
+ほんで、各ファイルの役割は
+各ファイルの役割
+ファイル
+役割
+bob.entity.json
+BOB本体設定（体力・当たり判定など）
+main.js
+全体管理・Script API開始
+ai.js
+AI・会話・返答生成
+chat.js
+チャット送受信
+emotion.js
+気分ゲージ・機嫌
+inventory.js
+アイテム受け渡し・クラフト
+events.js
+マグマ・奈落・敵撃破など
+voice.js
+音声再生（将来）
+utils.js
+共通関数
+これね。
